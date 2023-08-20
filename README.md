@@ -14,3 +14,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+/// notes
+android/build.gradle --> classpath 'com.google.gms:google-services:4.3.8'
+/android/app/build.gradle --> apply plugin: 'com.google.gms.google-services'
+
+Firestore Database --> Create database --> Start in test mode
+
+import 'package:firebase_core/firebase_core.dart'; ---> used for ---> Firebase.initializeApp();
+
+import 'package:cloud_firestore/cloud_firestore.dart'; --> used for
+--> DocumentReference documentReference = FirebaseFirestore.instance.collection("Dishes").doc("Food");
